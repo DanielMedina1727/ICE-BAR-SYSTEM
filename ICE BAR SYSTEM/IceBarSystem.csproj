@@ -1,0 +1,123 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+  </ItemGroup>
+
+  <!-- Configuración de diseñador Visual Studio (Igual a xdnt123) -->
+  <ItemGroup>
+    <Compile Update="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormStockAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormStockAdmin.Designer.cs">
+      <DependentUpon>FormStockAdmin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormStockAdmin.resx">
+      <DependentUpon>FormStockAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormStockConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormStockConsulta.Designer.cs">
+      <DependentUpon>FormStockConsulta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormStockConsulta.resx">
+      <DependentUpon>FormStockConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormVenta.Designer.cs">
+      <DependentUpon>FormVenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormVenta.resx">
+      <DependentUpon>FormVenta.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormHistorialVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormHistorialVentas.Designer.cs">
+      <DependentUpon>FormHistorialVentas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormHistorialVentas.resx">
+      <DependentUpon>FormHistorialVentas.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormIncidencias.Designer.cs">
+      <DependentUpon>FormIncidencias.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormIncidencias.resx">
+      <DependentUpon>FormIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="Forms\FormConfigConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormConfigConexion.Designer.cs">
+      <DependentUpon>FormConfigConexion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FormConfigConexion.resx">
+      <DependentUpon>FormConfigConexion.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
